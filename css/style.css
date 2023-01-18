@@ -394,6 +394,9 @@ img {
   width: 168px;
   height: 88px;
 }
+.logo-list-icon{
+  fill: #8E8F99;
+}
 .logo-list-link:hover .logo-list-icon,
 .logo-list-link:focus .logo-list-icon {
   fill: #404bbf;
