@@ -353,7 +353,7 @@ img {
   background-color: #4d5ae5;
   border-radius: 50%;
 }
- .social-list-icon {
+.social-list-icon {
   fill: #f4f4fd;
 }
 .social-list-link:hover,
@@ -394,9 +394,10 @@ img {
   width: 168px;
   height: 88px;
 }
-.logo-list-icon{
+/* .logo-list-icon{
   fill: #8E8F99;
-}
+} */
+
 .logo-list-link:hover .logo-list-icon,
 .logo-list-link:focus .logo-list-icon {
   fill: #404bbf;
