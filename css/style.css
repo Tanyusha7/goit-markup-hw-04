@@ -283,8 +283,13 @@ img {
   border: 0.5px solid #f4f4fd;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
-.image-item:hover,
-.image-item:focus {
+.img-link {
+  display: block;
+  text-decoration: none;
+}
+.img-link:hover,
+.img-link:focus {
+  background-color: #ffffff;
   border: 0.5px solid #f4f4fd;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -303,20 +308,17 @@ img {
 }
 
 .list .list-item {
+  width: 264px;
   text-align: left;
 }
-.icon-antenna::before {
-  background-image: url(../images/icons.svg#antenna);
-}
-.list-item-icon::before {
-  display: block;
-  content: "";
+
+.icon {
+  display: flex;
   margin-bottom: 8px;
   height: 112px;
-  background-image: url("../images/icons.svg#antenna");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
   background-color: #f4f4fd;
   border-radius: 4px;
 }
@@ -354,12 +356,16 @@ img {
   justify-content: center;
   gap: 24px;
 }
+.social-list-item {
+  height: 40px;
+  width: 40px;
+}
 .social-list-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40px;
-  width: 40px;
+  height: 100%;
+  width: 100%;
 
   background-color: #4d5ae5;
   border-radius: 50%;
@@ -394,13 +400,16 @@ img {
   justify-content: center;
   gap: 24px;
 }
-
+.logo-list-item {
+  width: 168px;
+  height: 88px;
+}
 .logo-list-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 168px;
-  height: 88px;
+  width: 100%;
+  height: 100%;
   border: 1px solid #8e8f99;
   border-radius: 4px;
 }
@@ -412,7 +421,7 @@ img {
 }
 
 .logo-list-link:is(:hover, :focus) .logo-list-icon {
-  fill: #404bbf;
+  fill: currentColor;
 }
 /* footer */
 .footer {
@@ -461,14 +470,20 @@ img {
 .footer-social-list {
   display: flex;
   justify-content: center;
+  align-items: baseline;
   gap: 16px;
+}
+.footer-social-item {
+  width: 40px;
+  height: 40px;
 }
 .footer-social-link {
   display: flex;
+  width: 100%;
+  height: 100%;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
+
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
 }
